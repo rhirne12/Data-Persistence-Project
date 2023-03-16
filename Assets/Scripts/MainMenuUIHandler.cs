@@ -30,6 +30,11 @@ public class MainMenuUIHandler : MonoBehaviour
        
     }
 
+    public void OpenUrl(string link)
+    {
+        Application.OpenURL(link);
+    }
+
     public void StartClick()
     {
         GameManager.Instance.player = name.GetComponent<TMP_InputField>().text;
